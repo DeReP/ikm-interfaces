@@ -75,7 +75,6 @@ nav > button:focus{
 
 
 footer {
-    position: absolute;
     bottom: 0;
     width:100%;
     display: block;
@@ -89,5 +88,3 @@ footer {
 .footer-info > h2{
     margin-bottom:20px;
 }
-
-
