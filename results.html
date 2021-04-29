@@ -5,51 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="script.js"></script>
+  <script src="javascript/script.js"></script>
   <title>Авторизация</title>
 </head>
-<header>
-  <a href="main.html"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
-  <nav>
-    <form action="main.html">
-      <button>На главную</button>
-    </form>
-    <form action="results.html">
-      <button>Список ответов</button>
-    </form>
-  </nav>
-  <form action="auth.html">
-    <button class="header__logon">Войти</button>
-  </form>
-</header>
-
 <body>
+<header>
+    <a href="main.html"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
+    <nav>
+      <form action="main.html">
+        <button>На главную</button>
+      </form>
+      <form action="results.html">
+        <button>Список ответов</button>
+      </form>
+    </nav>
+    <form action="auth.html">
+      <button class="header__logon">Войти</button>
+    </form>
+</header>
+<main>
   <div class="inf">
-    <div class="inf-block">
-      <div class=inf-block-form>
-        <p class="inf-block-form-label">Выберите предмет</p>
-        <select class="inf-block-form-box">
-          <option value="Option 1">Проектирование интерфейсов</option>
-          <option value="Option 2">Виртуальные частные сети</option>
-          <option value="Option 3">Криптографические протоколы и стандарты</option>
-        </select>
+    <section>
+      <div class="inf-block">
+        <div class=inf-block-form>
+          <p class="inf-block-form-label">Выберите предмет</p>
+          <select id="subjects" class="inf-block-form-box">
+            <option value="Проектирование интерфейсов">Проектирование интерфейсов</option>
+            <option value="Виртуальные частные сети">Виртуальные частные сети</option>
+            <option value="Криптографические протоколы и стандарты">Криптографические протоколы и стандарты</option>
+          </select>
+        </div>
+        <div class="inf-block-form">
+          <p class="inf-block-form-label">Выберите тему</p>
+          <select id="themes" class="inf-block-form-box">
+            <option value="Пользовательский интерфейс">Пользовательский интерфейс</option>
+            <option value="Адаптивная верстка и Flex-технологии">Адаптивная верстка и Flex-технологии</option>
+            <option value="Семантическая верстка">Семантическая верстка</option>
+            <option value="Кроссбраузерность">Кроссбраузерность</option>
+            <option value="Основы CSS">Основы CSS</option>
+          </select>
+        </div>
       </div>
-      <div class="inf-block-form">
-        <p class="inf-block-form-label">Выберите тему</p>
-        <select class="inf-block-form-box">
-          <option value="Option 1">Пользоватльский интерфейс</option>
-          <option value="Option 2">Адаптивная верстка и Flex-технологии</option>
-          <option value="Option 3">Семантическая верстка</option>
-          <option value="Option 2">Кроссбраузерность</option>
-          <option value="Option 3">Основы CSS</option>
-        </select>
+      <div class="inf-but">
+        <button type="submit" id="btn" class="inf-button">Показать выбранное</button>
       </div>
-    </div>
-    <div class="inf-but">
-      <button class="inf-button">Показать выбранное</button>
-    </div>
+    </section>
   </div>
-  <table id="table" class="table" border="1" width="100%" cellpadding="5">
+  <table id="table" class="table hide" border="1" width="100%" cellpadding="5">
     <tr>
       <th class="col1">ФИО студента \ Вопрос</th>
       <th>1</th>
@@ -135,9 +137,7 @@
       <th>0</th>
     </tr>
   </table>
-
-
-
+</main>
   <footer>
     <div class="footer-info">
       <h2>О нас</h2>
