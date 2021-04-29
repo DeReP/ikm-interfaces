@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система тестирования</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/test1style.css">
+</head>
+
+<body>
+    <header>
+        <img class="header__logo" src="img/logo.svg" alt="logo">
+        <nav>
+            <button>На главную</button>
+            <button>Список ответов</button>
+        </nav>
+        <button class="header__logon">Войти</button>
+    </header>
+    <main>
+        <div class="about">
+            <h2>Проектирование интерфейсов</h2>
+            <h3>Семантическая верстка.</h3>
+        </div>
+        <div class="test">
+            <ul>
+                <ul>1. В чем отличие тегов &lt;div&gt; и &lt;span&gt;?
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            div - является строчным элементом, а span - блочным
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            span - является строчным элементом, а div - блочным
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            между ними нет разницы
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            тег span не надо закрывать
+                        </label>
+                    </li>
+                </ul>
+                <ul>2. Какие из перечисленных ниже тегов являются блочными?
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            &lt;span&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            &lt;div&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            &lt;p&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            &lt;br&gt;
+                        </label>
+                    </li>
+					<li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            &lt;a&gt;
+                        </label>
+                    </li>
+                </ul>
+                <ul>3. Чтобы организовать ненумерованный список необходимо использовать тег:
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            &lt;th&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            &lt;ol&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            &lt;hq&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                          &lt;hr&gt;
+                        </label>
+                    </li>
+					<li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                          &lt;ul&gt;
+                        </label>
+                    </li>
+                </ul>
+                <ul>4. Сколько всего уровней заголовков <HX>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            от 1 до 6
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            от 1 до 10
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            существует только один уровень
+                        </label>
+                    </li>
+					 <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            от -10 до 10
+                        </label>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main__student">
+            <div class="main__students-initials">
+                <p class="main__student-initials__text">Введите ФИО:</p>
+                <label class="placeholder-box1">
+                    <input required type="text" placeholder="Иванов Иван Иванович*">
+                </label>
+            </div>
+            <div class="main__students-email">
+                <p class="main__student-email__text">Введите ваш Email</p>
+                <label class="placeholder-box2">
+                    <input required type="text" placeholder="Pochta@gmail.com">
+                </label>
+            </div>
+			<button class="main__students__button">Отправить</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <h2>О нас</h2>
+            <p>Контактные данные: +7(999)123-68-30</p>
+            <p>Email: vam.vam10@mail.ru</p>
+        </div>
+    </footer>
+</body>
+
+</html>
