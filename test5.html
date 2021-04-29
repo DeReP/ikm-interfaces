@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система тестирования</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/test1style.css">
+</head>
+
+<body>
+    <header>
+        <img class="header__logo" src="img/logo.svg" alt="logo">
+        <nav>
+            <button>На главную</button>
+            <button>Список ответов</button>
+        </nav>
+        <button class="header__logon">Войти</button>
+    </header>
+    <main>
+        <div class="about">
+            <h2>Проектирование интерфейсов</h2>
+            <h3>Основы CSS.</h3>
+        </div>
+        <div class="test">
+            <ul>
+                <ul>1. Как изменить цвет фона для всех элементов h1 на странице?
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            h1[all] {background-color: #ccc;}
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            h1.all {background-color: #ccc;}
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            h1:all {background-color: #ccc;}
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+							h1 {background-color: #ccc;}
+                        </label>
+                    </li>
+                </ul>
+                <ul>2. Какое принципиальное отличие селектора ID от селектора CLASS?
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            Разница только в наборе свойств, который может быть использован для этих селекторов. Например, для ID нельзя задавать свойство border, а для CLASS можно.
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                           Никакого отличия между ними нет.
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            ID должен быть уникальным на странице, а одинаковый CLASS может быть у нескольких элементов.
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            CLASS должен быть уникальным на странице, а одинаковый ID может быть у нескольких элементов.
+                        </label>
+                    </li>
+                </ul>
+                <ul>3. Необходимо, чтобы при наведении курсора мыши на ссылку, она меняла цвет. Какой псевдоэлемент нужно использовать?
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            link
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            active
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                           onmouseover
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                           hover
+                        </label>
+                    </li>
+                </ul>
+                <ul>4. Расшифруйте аббревиатуру CSS
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            Cascading Style Sheets
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            Case Style Says
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            Case Style Scholar
+                        </label>
+                    </li>
+                </ul>
+				<ul>5. Какое расширение имеет файл стилей?
+					<li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                          .css
+                        </label>
+                    </li>
+					<li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            .ssc
+                        </label>
+                    </li>
+					<li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                           .style
+                        </label>
+                    </li>
+				</ul>
+                <ul>6. Что такое наследование в CSS?
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            Такого понятия не существует в CSS
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            Механизм, с помощью которого определенные свойства передаются от элемента к его ближайшим соседям.
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            Механизм, с помощью которого определенные свойства передаются от предка к его потомкам.
+                        </label>
+                    </li>
+                </ul>
+                <ul>7. Если потребуется для текста установить шрифт, какое свойство поможет?
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            font-family
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            font-style
+                        </label>
+                    </li>
+                    <li>
+                        <label class="usual__check usual__option">
+                            <input class="usual__check__input" type="checkbox">
+                            <span class="usual__check__box"></span>
+                            text-decoration
+                        </label>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main__student">
+            <div class="main__students-initials">
+                <p class="main__student-initials__text">Введите ФИО:</p>
+                <label class="placeholder-box1">
+                    <input required type="text" placeholder="Иванов Иван Иванович*">
+                </label>
+            </div>
+            <div class="main__students-email">
+                <p class="main__student-email__text">Введите ваш Email</p>
+                <label class="placeholder-box2">
+                    <input required type="text" placeholder="Pochta@gmail.com">
+                </label>
+            </div>
+			<button class="main__students__button">Отправить</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <h2>О нас</h2>
+            <p>Контактные данные: +7(999)123-68-30</p>
+            <p>Email: vam.vam10@mail.ru</p>
+        </div>
+    </footer>
+</body>
+
+</html>
