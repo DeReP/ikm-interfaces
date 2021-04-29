@@ -75,6 +75,7 @@ nav > button:focus{
 
 
 footer {
+    position: absolute;
     bottom: 0;
     width:100%;
     display: block;
@@ -87,4 +88,43 @@ footer {
 
 .footer-info > h2{
     margin-bottom:20px;
+}
+
+
+
+.container {
+    max-width: 600px;
+    margin: 60px 0px 0px 40px;
+    
+}
+
+.container > h2 {
+    padding: 15px 0px;
+}
+
+.container > p {
+    line-height: 130%;
+}
+.cards {
+    margin: 35px 0px;
+}
+
+.card {
+    cursor: pointer;    
+    background: #D1D1D1;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center; 
+    padding: 27px;
+    margin: 30px 0px;
+    max-width: 440px;
+}
+
+.card:hover {
+    background: gray;
+}
+
+.card > a {
+    margin: 10px 0px;
+   
 }
