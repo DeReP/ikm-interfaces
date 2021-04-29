@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
+  <title>Авторизация</title>
+</head>
+<header>
+  <a href="main.html"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
+  <nav>
+    <form action="main.html">
+      <button>На главную</button>
+    </form>
+    <form action="results.html">
+      <button>Список ответов</button>
+    </form>
+  </nav>
+  <form action="auth.html">
+    <button class="header__logon">Войти</button>
+  </form>
+</header>
+
+<body>
+  <div class="inf">
+    <div class="inf-block">
+      <div class=inf-block-form>
+        <p class="inf-block-form-label">Выберите предмет</p>
+        <select class="inf-block-form-box">
+          <option value="Option 1">Проектирование интерфейсов</option>
+          <option value="Option 2">Виртуальные частные сети</option>
+          <option value="Option 3">Криптографические протоколы и стандарты</option>
+        </select>
+      </div>
+      <div class="inf-block-form">
+        <p class="inf-block-form-label">Выберите тему</p>
+        <select class="inf-block-form-box">
+          <option value="Option 1">Пользоватльский интерфейс</option>
+          <option value="Option 2">Адаптивная верстка и Flex-технологии</option>
+          <option value="Option 3">Семантическая верстка</option>
+          <option value="Option 2">Кроссбраузерность</option>
+          <option value="Option 3">Основы CSS</option>
+        </select>
+      </div>
+    </div>
+    <div class="inf-but">
+      <button class="inf-button">Показать выбранное</button>
+    </div>
+  </div>
+  <table id="table" class="table" border="1" width="100%" cellpadding="5">
+    <tr>
+      <th class="col1">ФИО студента \ Вопрос</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th class="col2">Количество баллов</th>
+    </tr>
+    <tr>
+      <th>Антонов Андрей</th>
+      <th class="correct">2</th>
+      <th class="correct">4</th>
+      <th class="correct">1</th>
+      <th class="correct">21</th>
+      <th class="correct">3</th>
+      <th class="correct">4</th>
+      <th class="correct">1</th>
+      <th class="correct">1</th>
+      <th class="correct">2</th>
+      <th class="correct">1</th>
+      <th>10</th>
+    </tr>
+    <tr>
+      <th>Писчасов Дмитрий</th>
+      <th class="wrong">1</th>
+      <th class="correct">4</th>
+      <th class="correct">1</th>
+      <th class="wrong">12</th>
+      <th class="wrong">4</th>
+      <th class="correct">1</th>
+      <th class="correct">1</th>
+      <th class="correct">1</th>
+      <th class="wrong">3</th>
+      <th class="wrong">3</th>
+      <th>5</th>
+    </tr>
+    <tr>
+      <th>Репнин Денис</th>
+      <th class="correct">2</th>
+      <th class="wrong">3</th>
+      <th class="correct">1</th>
+      <th class="correct">21</th>
+      <th class="correct">3</th>
+      <th class="correct">4</th>
+      <th class="correct">1</th>
+      <th class="correct">1</th>
+      <th class="correct">2</th>
+      <th class="correct">1</th>
+      <th>9</th>
+    </tr>
+    <tr>
+      <th>Плотникова Наталья</th>
+      <th class="correct">2</th>
+      <th class="correct">4</th>
+      <th class="correct">1</th>
+      <th class="wrong">12</th>
+      <th class="correct">3</th>
+      <th class="correct">4</th>
+      <th class="correct">1</th>
+      <th class="correct">1</th>
+      <th class="correct">2</th>
+      <th class="correct">1</th>
+      <th>9</th>
+    </tr>
+    <tr>
+      <th>Гребнев Вадим</th>
+      <th class="wrong">1</th>
+      <th class="wrong">1</th>
+      <th class="wrong">3</th>
+      <th class="wrong">12</th>
+      <th class="wrong">2</th>
+      <th class="wrong">2</th>
+      <th class="wrong">2</th>
+      <th class="wrong">4</th>
+      <th class="wrong">1</th>
+      <th class="wrong">2</th>
+      <th>0</th>
+    </tr>
+  </table>
+
+
+
+  <footer>
+    <div class="footer-info">
+      <h2>О нас</h2>
+      <p>Контактные данные: +7(999)123-68-30</p>
+      <p>Email: vam.vam10@mail.ru</p>
+    </div>
+  </footer>
+</body>
+
+</html>

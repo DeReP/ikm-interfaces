@@ -10,26 +10,34 @@
 
 <body>
     <header>
-        <img class="header__logo" src="img/logo.svg" alt="logo">
-        <nav>
-            <button>На главную</button>
-            <button>Список ответов</button>
+        <a href="main.html"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
+        <nav>   
+            <form action="main.html">
+                <button>На главную</button>
+            </form>
+            <form  action="results.html">
+                <button>Список ответов</button>
+            </form>
         </nav>
-        <button class="header__logon">Войти</button>
+        <form action="auth.html">
+            <button class="header__logon">Войти</button>
+        </form>
     </header>
     <main>
         <div class="container">
             <h2>Система тестирования студентов</h2>
             <p>Все тесты предназначены на проверку знаний по выбранным темам. Их составляли эксперты в данной области, в том числе преподаватели этих предметов.</p>
             <div class="cards">
+                <a href="interfaces.html">
+                    <div class="card">
+                        Проектирование интерфейсов
+                    </div>
+                </a>
                 <div class="card">
-                    <a>Проектирование интерфейсов</a>
+                    Виртуальные частные сети
                 </div>
                 <div class="card">
-                    <a>Виртуальные частные сети</a>
-                </div>
-                <div class="card">
-                    <a>Криптографические протоколы и стандарты</a>
+                    Криптографические протоколы и стандарты
                 </div>
             </div>
         </div>

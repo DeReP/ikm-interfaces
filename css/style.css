@@ -25,7 +25,17 @@ header{
     padding-top: 5px;
 }
 
-header > img{
+a{
+    margin:0;
+    text-decoration: none;
+    color: black;
+}
+
+form{
+    margin:0;
+}
+
+header > a > img{
     margin-right: 0;
     margin-left: 20px;
     -webkit-transform: scale(1);
@@ -34,8 +44,8 @@ header > img{
 	transition: .3s ease-in-out;
 }
 
-header > img:hover,
-header > img:focus{
+header > a > img:hover,
+header > a > img:focus{
     -webkit-transform: scale(1.1);
 	transform: scale(1.1);
     cursor: pointer;
@@ -47,8 +57,8 @@ nav{
     margin-left:10px;
 }
 
-header > button,
-nav > button{
+header > form > button,
+nav > form >button{
     background: #3c3449;
     border-color:#3c3449;
     padding:10px 20px;
@@ -57,17 +67,17 @@ nav > button{
     border-radius: 6px;  
 }
 
-header > button{
+header > form > button{
     margin-right: 30px;
     padding: 10px 50px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-header > button:hover,
-header > button:focus,
-nav > button:hover,
-nav > button:focus{
+header > form > button:hover,
+header > form > button:focus,
+nav > form > button:hover,
+nav > form > button:focus{
     background: #3c1529;
     border-color:#3c1529;
 }
@@ -75,9 +85,8 @@ nav > button:focus{
 
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width:100%;
+    position: relative;
+	min-height: 100%;
     display: block;
     background: lightgray;  
 }
@@ -89,8 +98,6 @@ footer {
 .footer-info > h2{
     margin-bottom:20px;
 }
-
-
 
 .container {
     max-width: 600px;
@@ -127,4 +134,324 @@ footer {
 .card > a {
     margin: 10px 0px;
    
+}
+
+/* тесты */
+
+.about {
+	padding: 43px;
+}
+
+.about>h2 {
+	margin-bottom: 20px;
+}
+
+.about>h3 {
+	font-weight: normal;
+}
+
+li {
+	list-style-type: none;
+	padding: 3px 20px;
+}
+
+.usual__check {
+padding-left: 1.21em;
+}
+
+.usual__check__input {
+	display:none;
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.usual__check__box {
+	position: absolute;
+	margin-top: 0.2em;
+	margin-left: -1em;
+	width: 0.6em;
+	height: 0.6em;
+	border-radius: 0.05em;
+	background-color: white;
+	-webkit-box-shadow: 0 0 0 0.1em #4A90E2;
+	box-shadow: 0 0 0 0.1em #4A90E2;
+}
+
+.usual__check__input:checked + .usual__check__box {
+	background-color: #4A90E2;
+	background-image:url('../img/check.svg');
+}
+
+.usual__check__input:focus + .usual__check__box {
+	-webkit-box-shadow:
+	0 0 0 0.1em #4A90E2,
+	0 0 0 0.2em #7ED321;
+	box-shadow:
+	0 0 0 0.1em #4A90E2,
+	0 0 0 0.2em #7ED321;
+}
+
+table {
+	width: 570px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+	
+.col1 {
+	width: 200px;
+	}
+	
+#input1 {
+	margin-left: 74px;
+	margin-bottom: 20px;
+}
+
+.test {
+	max-width: 800px;
+	margin: 0;
+}
+
+.main__student {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 40px;
+}
+.main__students-initials {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	max-width: 400px;
+}
+
+.main__students-email {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	max-width: 400px;
+	margin-right: 100px;
+}
+
+.main__student-initials__text {
+	padding-right: 47px;
+}
+
+.main__student-email__text {
+	padding-right: 10px;
+}
+
+.placeholder-box1 { 
+	display: block;	
+	position: relative;
+	margin: 20px 0;
+	width: 250px;
+}
+
+.placeholder-box2 {
+	display: block;	
+	position: relative;	
+	width: 250px;
+	margin-left: 8px;
+}
+
+.placeholder-box1 input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #495057;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+}
+
+input[type="text"]:hover {
+	border-color: #06D9D9;
+}
+
+input[type="text"]:focus {
+	border-color: #06D9D9;
+	outline: none;
+}
+	
+
+
+.placeholder-box2 input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #495057;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+}
+.placeholder-text {    
+	display: block;
+	width: 100%; 
+	line-height: 37px;
+	position: absolute;
+	left: 10px;
+	top: 0;
+	bottom: 0;
+	color: #888;
+	cursor: text;
+	user-select: none;
+	margin: 0;
+}
+ 
+.main__students__button {
+	background: #3c3449;
+    border-color:#3c3449;
+    padding:10px 20px;
+    margin-left:292px;
+	margin-top: 20px;
+    color: white;
+    border-radius: 6px; 
+}
+
+.main__students__button:focus{
+    background: #3c1529;
+    border-color:#3c1529;
+}
+.main__students__button:hover{
+    background: #3c1529;
+    border-color:#3c1529;
+}
+
+
+
+
+
+.inf{
+    display: flex;
+    width: 1200px;
+    height: 450px;
+    flex-direction: column;
+    
+    justify-content: left;
+}
+
+.inf-block{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 1000px;
+    justify-content:flex-start;
+    align-items: baseline;
+    padding-left: 50px;  
+}
+
+.inf-block-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    padding-top: 50px;
+}
+.inf-block-form-label {
+  font-size: 18px;
+}
+.inf-block-form-box{
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 450px;
+    
+}
+
+.inf-but {
+    display: flex;
+    width: 279px;
+    height: 18px;
+    align-items: center;
+    padding-left:50px;
+    
+}
+.inf-button{
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    
+    width: 279px;
+    height: 41px;
+    
+}
+
+
+.table {
+  margin-top:30px;
+  margin-left: 30px;
+  width: 800px;
+}
+.correct {
+
+    color:green;
+}
+
+.wrong {
+    color:red;
+}
+
+
+.col1 {
+    width: 200px;
+}
+
+.col2 {
+    width: 150px;
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+ 
+}
+.auth-inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 50px;
+}
+.auth-inf-log {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+}
+.auth-inf-pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+.input {
+    margin-left: 50px;
+
+}
+.auth-inf-p{
+    font-size: 18px;
+    
+}
+.auth-but {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 90px;
+}
+.auth-button {
+    background-color: #c4c4c4;
+
 }

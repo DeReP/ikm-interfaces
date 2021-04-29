@@ -10,33 +10,49 @@
 
 <body>
     <header>
-        <img class="header__logo" src="img/logo.svg" alt="logo">
+        <a href="main.html"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
         <nav>
-            <button>На главную</button>
-            <button>Список ответов</button>
+            <form action="main.html">
+                <button>На главную</button>
+            </form>
+            <form action="results.html">
+                <button>Список ответов</button>
+            </form>
         </nav>
-        <button class="header__logon">Войти</button>
+        <form action="auth.html">
+            <button class="header__logon">Войти</button>
+        </form>
     </header>
     <main>
         <div class="container">
             <h2>Проектирование интерфейсов</h2>
             <p>Выберите одну из предложенных тем:</p>
             <div class="cards">
-                <div class="card">
-                    <a>Пользовательский интерфейс</a>
-                </div>
-                <div class="card">
-                    <a>Адаптивная верстка и Flex-технологии.</a>
-                </div>
-                <div class="card">
-                    <a>Семантическая верстка.</a>
-                </div>
-                 <div class="card">
-                    <a>Кроссбраузерность.</a>
-                </div>
-                 <div class="card">
-                    <a>Основы CSS.</a>
-                </div>
+                <a href="test1.html">
+                    <div class="card">
+                        Пользовательский интерфейс
+                    </div>
+                </a>
+                <a href="test2.html">
+                    <div class="card">
+                        Адаптивная верстка и Flex-технологии
+                    </div>
+                </a>
+                <a href="test3.html">
+                    <div class="card">
+                        Семантическая верстка
+                    </div>
+                </a>
+                <a href="test4.html">
+                    <div class="card">
+                        Кроссбраузерность
+                    </div>
+                </a>
+                <a href="test5.html">
+                    <div class="card">
+                        Основы CSS
+                    </div>
+                </a>
             </div>
         </div>
     </main>
